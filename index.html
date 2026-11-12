@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<title>kilinvaler — Water Wisdom and other apps</title>
+<meta name="description" content="Simple, calm and private Android apps by kilinvaler: Water Wisdom — drink water reminder and water tracker with a wise thought in every glass.">
+<link rel="canonical" href="https://kilinvaler.github.io/">
+<link rel="alternate" hreflang="en" href="https://kilinvaler.github.io/en/">
+<link rel="alternate" hreflang="ru" href="https://kilinvaler.github.io/ru/">
+<link rel="alternate" hreflang="el" href="https://kilinvaler.github.io/el/">
+<link rel="alternate" hreflang="de" href="https://kilinvaler.github.io/de/">
+<link rel="alternate" hreflang="fr" href="https://kilinvaler.github.io/fr/">
+<link rel="alternate" hreflang="es" href="https://kilinvaler.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://kilinvaler.github.io/">
+<meta property="og:title" content="kilinvaler — Water Wisdom">
+<meta property="og:image" content="https://kilinvaler.github.io/assets/water-wisdom-icon.png">
+</head>
+<body class="home">
+<main class="choose">
+  <img class="app-icon" src="assets/water-wisdom-icon.png" width="112" height="112" alt="Water Wisdom">
+  <h1>Water Wisdom</h1>
+  <p class="lead">Choose your language</p>
+  <div class="lang-grid"><a class="lang-card" href="en/" hreflang="en" lang="en">English</a><a class="lang-card" href="ru/" hreflang="ru" lang="ru">Русский</a><a class="lang-card" href="el/" hreflang="el" lang="el">Ελληνικά</a><a class="lang-card" href="de/" hreflang="de" lang="de">Deutsch</a><a class="lang-card" href="fr/" hreflang="fr" lang="fr">Français</a><a class="lang-card" href="es/" hreflang="es" lang="es">Español</a></div>
+  <p class="hint" id="hint" hidden></p>
+</main>
+<footer><p class="copy">© 2026 kilinvaler</p></footer>
+<script>
+// Подсказка: выделяем язык браузера, но не перенаправляем автоматически (кнопки остаются видны всем, в том числе Google)
+try {
+  var supported = ["en", "ru", "el", "de", "fr", "es"];
+  var pref = (navigator.languages || [navigator.language || 'en']).map(function(x){return (x||'').slice(0,2).toLowerCase();});
+  for (var i = 0; i < pref.length; i++) {
+    if (supported.indexOf(pref[i]) >= 0) {
+      var a = document.querySelector('.lang-card[hreflang="' + pref[i] + '"]');
+      if (a) a.classList.add('suggested');
+      break;
+    }
+  }
+} catch (e) {}
+</script>
+</body>
+</html>

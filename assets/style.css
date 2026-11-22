@@ -47,3 +47,22 @@ footer p{margin:6px 0}
   text-decoration:none;color:var(--ink);font-weight:700;font-size:18px;box-shadow:0 6px 16px rgba(14,53,80,.06)}
 .lang-card.suggested{border-color:var(--accent);box-shadow:0 0 0 3px #1E88E533}
 @media (max-width:420px){ .btn{width:100%} }
+/* статьи */
+.articles{padding:8px 0 36px}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.art-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;
+  text-decoration:none;color:var(--ink);box-shadow:0 6px 18px rgba(14,53,80,.06);transition:transform .15s}
+.art-card:hover{transform:translateY(-2px)}
+.art-card .ic{font-size:30px;line-height:1}
+.art-card h3{margin:10px 0 6px;font-size:18px}
+.art-card p{margin:0;color:var(--ink2);font-size:15.5px}
+.art-card .more{display:inline-block;margin-top:10px;color:var(--accent);font-weight:700;font-size:15px}
+.article{max-width:720px;margin:0 auto;padding:12px 0 40px}
+.article .back{display:inline-block;margin:4px 0 18px;text-decoration:none;font-weight:700}
+.article h1{font-size:clamp(28px,5vw,42px);text-align:left;margin:6px 0 18px}
+.article .big-ic{font-size:44px;line-height:1}
+.article p,.article li{font-size:18px;color:var(--ink)}
+.article h2{text-align:left;font-size:22px;margin:26px 0 10px}
+.article ul{padding-left:22px}
+.article .cta{text-align:center;margin:34px 0 10px}
+.article .disclaimer{font-size:14px;color:var(--ink2);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}

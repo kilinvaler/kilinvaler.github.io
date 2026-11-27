@@ -67,3 +67,10 @@ footer p{margin:6px 0}
 .article ul{padding-left:22px}
 .article .cta{text-align:center;margin:34px 0 10px}
 .article .disclaimer{font-size:14px;color:var(--ink2);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+/* скриншоты */
+.shots{padding:4px 0 36px}
+.shot-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.shot-row img{flex:0 0 auto;width:220px;height:auto;aspect-ratio:9/16;border-radius:20px;scroll-snap-align:center;
+  box-shadow:0 8px 22px rgba(14,53,80,.16);background:#e8f4fb}
+@media (min-width:900px){ .shot-row img{width:250px} }
